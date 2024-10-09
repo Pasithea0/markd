@@ -1,5 +1,5 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-static';
 
 /* This application will be hosted on vercel, surge.sh or Cloudflare pages 
 surge.sh - deploy from command line using `pnpm surge`
@@ -11,9 +11,7 @@ Cloudflare pages - deploy from webUI, having issues with adapter here only
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter({
-      out: '.svelte-kit/cloudflare'
-    }),
+    adapter: adapter(),
   }
 };
 
