@@ -1,5 +1,5 @@
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-node';
 
 /* This application will be hosted on vercel, surge.sh or Cloudflare pages 
 surge.sh - deploy from command line using `pnpm surge`
