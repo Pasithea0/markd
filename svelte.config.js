@@ -11,7 +11,9 @@ Cloudflare pages - deploy from webUI, having issues with adapter here only
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      out: '.svelte-kit/cloudflare'
+    }),
   }
 };
 
